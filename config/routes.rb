@@ -4,4 +4,5 @@ Rails.application.routes.draw do
              path_names: { sign_in: 'login', sign_out: 'logout' },
              skip: [:confirmation, :unlock, :registration, :sign_up, :password]
   resources :users
+  resources :addresses
 end
