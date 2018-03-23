@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
+  load_and_authorize_resource
   before_action :authenticate_user!
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
-    @users = User.all
+    @users = User.all_except(current_user)
   end
 
   def show

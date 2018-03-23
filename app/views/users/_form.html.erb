@@ -18,6 +18,10 @@
     <%= f.email_field :email %>
   </div>
   <div>
+    <%= f.label :role %>
+    <%= f.select :role, [['Custumer', 0], ['Staff', 1], ['Admin', 2]] %>
+  </div>
+  <div>
     <%= f.label :password %>
     <%= f.password_field :password %>
   </div>

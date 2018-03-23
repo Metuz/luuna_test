@@ -21,15 +21,16 @@
         <td><%= address.city %></td>
         <td><%= address.state %></td>
         <td><%= address.country %></td>
-        <td><%= link_to 'Show', address %></td>
-        <td><%= link_to 'Edit', edit_address_path(address) %></td>
-        <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= show_link address %></td>
+        <td><%= edit_link address %></td>
+        <td><%= destroy_link address %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<%= show_link User, 'Index' %>
 <br>
-<%= link_to 'Edit', edit_user_path(@user) %>
+<%= edit_link @user %>
 <br>
-<%= link_to 'Back', users_path %>
+<%= destroy_link @user %>

@@ -8,5 +8,5 @@ class Address < ApplicationRecord
   validates :country, presence: true
   validates :user_id, presence: true
 
-  delegate :name, :id, to: :user, prefix: true
+  delegate :name, :id, to: :user, prefix: true, allow_nil: true
 end
