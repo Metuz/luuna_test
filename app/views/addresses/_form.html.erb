@@ -11,37 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div>
     <%= form.label :street %>
-    <%= form.text_field :street, id: :address_street %>
+    <%= form.text_field :street %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :zip_code %>
-    <%= form.text_field :zip_code, id: :address_zip_code %>
+    <%= form.text_field :zip_code %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :city %>
-    <%= form.text_field :city, id: :address_city %>
+    <%= form.text_field :city %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :state %>
-    <%= form.text_field :state, id: :address_state %>
+    <%= form.text_field :state %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :country %>
-    <%= form.text_field :country, id: :address_country %>
+    <%= form.text_field :country %>
   </div>
 
-  <div class="field">
+  <div>
     <%= form.label :user_id %>
     <%= form.collection_select(:user_id, User.all, :id, :name) %>
   </div>
 
-  <div class="actions">
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
